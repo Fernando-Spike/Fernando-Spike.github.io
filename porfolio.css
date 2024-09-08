@@ -1,0 +1,265 @@
+.main_theme{
+    color: #333;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #009ffc; /* light blue for dropdown menu */
+  }
+  .navbar {
+    background-color: #009ffc; /* light blue */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #FFFFFF; /* white */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #FFFFFF; /* white on hover */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #FFFFFF; /* white for active link */
+  }
+  
+  .dropdown-menu {
+    background-color: #FFFFFF; /* light blue for dropdown menu */
+  }
+  
+  .dropdown-item {
+    color: #FFFFFF; /* white for dropdown items */
+  }
+  
+  .dropdown-item:hover {
+    color: #009ffc; /* white on hover for dropdown items */
+    background-color: #009ffc; /* light blue on hover for dropdown items */
+  }
+
+  .bg-image {
+    background-image: url('Pictures/index-image.png'); /* replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* text color */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add text shadow for better readability */
+  }
+  .profile-pic img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-pic img:hover {
+    transform: scale(1.1);
+  }
+
+  .certification-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* add this to allow wrapping on smaller screens */
+}
+
+.certification-image {
+    width: 30%;
+    height: auto;
+    margin: 10px; /* add some margin for better spacing */
+}
+
+/* media query for desktop screens */
+@media only screen and (min-width: 768px) {
+    .certification-row {
+        flex-wrap: nowrap; /* prevent wrapping on desktop screens */
+    }
+}
+
+/* media query for mobile screens */
+@media only screen and (max-width: 767px) {
+    .certification-image {
+        width: 100%; /* make images full-width on mobile screens */
+        margin: 10px 0; /* adjust margin for better spacing */
+    }
+}   
+
+#popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#popup {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#popup-container {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#contact-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact-btn:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+#contact-btn:active {
+  background-color: #2f6f31;
+  transform: scale(0.9);
+}
+.project-title {
+  font-size: 40px; /* or any other size you prefer */
+  font-weight: bold;
+  color:#FFFFFF
+}
+
+#photo-gallery {
+  margin-top: 20px;
+}
+
+.carousel-inner {
+  padding: 20px;
+}
+
+.carousel-item {
+  margin-bottom: 20px;
+}
+
+.certificate-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.logo_IPJMI {
+  width: 200px;
+  height: 200px;
+}
+
+.logo_MMM {
+  width: 270px;
+  height: 200px;
+}
+
+.logo_JUVIEM{
+  width: 400px;
+  height: 100px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 15%;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: auto;
+  right: 0;
+}
+
+.embed-responsive {
+  width: 500px;
+  height: 280px;
+  justify-content: center;
+}
