@@ -6,7 +6,7 @@ document.getElementById("contact-btn").addEventListener("click", function() {
 
  // Initialize the carousel
  var carousel = new bootstrap.Carousel(document.getElementById('certifications-slideshow'), {
-  interval: 5000, // Change the interval to 5 seconds
+  interval: 2000, // Change the interval to 5 seconds
   pause: "hover" // Pause the slideshow on hover
 });
 
@@ -15,4 +15,24 @@ document.querySelectorAll('.carousel-control-prev, .carousel-control-next').forE
   control.addEventListener('click', function() {
     carousel.cycle();
   });
+});
+
+const toggleSwitch = document.getElementById('darkModeToggle');
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+// Set initial theme based on system preference
+if (prefersDarkScheme.matches) {
+  document.body.classList.add('bg-gray-900', 'text-white');
+  document.body.classList.remove('bg-white', 'text-black');
+  toggleSwitch.checked = true;
+}
+
+toggleSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.add('bg-gray-900', 'text-white');
+    document.body.classList.remove('bg-white', 'text-black');
+  } else {
+    document.body.classList.add('bg-white', 'text-black');
+    document.body.classList.remove('bg-gray-900', 'text-white');
+  }
 });

@@ -1,3 +1,7 @@
+/* Tailwind css classes for the component */
+@import "tailwindcss";
+
+
 .main_theme{
     color: #333;
     justify-content: center;
@@ -5,37 +9,38 @@
     font-weight: bold;
 }
 
-.dropdown-menu {
-    background-color: #009ffc; /* light blue for dropdown menu */
-  }
-  .navbar {
-    background-color: #009ffc; /* light blue */
-  }
-  
-  .navbar-nav .nav-link {
-    color: #FFFFFF; /* white */
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #FFFFFF; /* white on hover */
-  }
-  
-  .navbar-nav .nav-link.active {
-    color: #FFFFFF; /* white for active link */
-  }
-  
-  .dropdown-menu {
-    background-color: #FFFFFF; /* light blue for dropdown menu */
-  }
-  
-  .dropdown-item {
-    color: #FFFFFF; /* white for dropdown items */
-  }
-  
-  .dropdown-item:hover {
-    color: #009ffc; /* white on hover for dropdown items */
-    background-color: #009ffc; /* light blue on hover for dropdown items */
-  }
+/* Bulma css */
+.bg-images {
+  background-size: cover;
+  background-position: center;
+}
+
+/* menu bar from top screen on bootstrap */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f9fa;
+}
+.navbar {
+  background-color: #343a40;
+}
+.navbar .nav-link {
+  color: #ffffff;
+}
+.portfolio-item {
+  transition: transform 0.3s;
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+.portfolio-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.portfolio-item .caption {
+  text-align: center;
+  margin-top: 10px;
+}
 
   .bg-image {
     background-image: url('Pictures/index-image.png'); /* replace with your image URL */
@@ -206,6 +211,11 @@ body {
 .carousel-control-prev-icon, .carousel-control-next-icon {
   font-size: 24px;
   color: #333;
+}
+.carousel-caption-text {
+  font-size: 2.5rem; /* Adjust the size as needed */
+  text-align: center;
+  width: 100%;
 }
 
 .logo_IPJMI {
